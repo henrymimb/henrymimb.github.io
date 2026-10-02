@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#070711" />
+    <meta name="description" content="BOOK工作室论文辅导咨询，为大学生提供选题方向、论文框架、文献检索、查重报告解读、格式规范与答辩准备指导。" />
+    <title>BOOK｜论文辅导撰写</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css?v=8" />
+  </head>
+  <body>
+    <canvas id="starCanvas" aria-hidden="true"></canvas>
+    <div class="aurora aurora-one" aria-hidden="true"></div>
+    <div class="aurora aurora-two" aria-hidden="true"></div>
+
+    <div class="app-shell">
+      <header class="topbar">
+        <button class="brand" type="button" data-page-target="home" aria-label="返回首页">
+          <img class="brand-avatar" src="./assets/book-avatar.jpg" alt="BOOK工作室" />
+          <span><strong>BOOK工作室</strong><small>专业论文辅导咨询</small></span>
+        </button>
+        <button class="online-pill" type="button" data-open-qr><i></i><span><b>由此添加小助理</b><small>全天 8-24h 在线回复</small></span></button>
+      </header>
+
+      <main>
+        <section class="page active" id="page-home" data-page="home" aria-labelledby="homeTitle">
+          <section class="hero home-stage glass-panel" data-reveal="zoom">
+            <div class="hero-badge" data-reveal data-reveal-delay="80"><i></i> BOOK · 全链路论文辅导</div>
+            <h1 id="homeTitle" data-reveal data-reveal-delay="160">让毕业变得<br /><span>更轻松</span></h1>
+            <p class="hero-lead" data-reveal data-reveal-delay="240">从选题至答辩<br /><b>全链路学术工作室</b></p>
+            <div class="hero-tags" data-reveal data-reveal-delay="320"><span>选题定题</span><span>初稿修改</span><span>检测答辩</span></div>
+            <div class="cnki-showcase" data-reveal data-reveal-delay="380">
+              <div class="cnki-browser">
+                <div class="cnki-window-head">
+                  <div class="cnki-window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                  <span class="cnki-promise">承诺所有论文均精选知网文献，无掺假、无伪造</span>
+                  <em>安全检索</em>
+                </div>
+                <div class="cnki-brand-row">
+                  <span class="cnki-brand"><img src="./assets/logo-cnki.png" alt="中国知网" /><b>学术文献检索</b></span>
+                  <small>中文学术资源发现平台</small>
+                </div>
+                <nav class="cnki-mode" aria-label="检索模式"><span class="active">检索</span><span>CNKI AI<sup>NEW</sup></span></nav>
+                <div class="cnki-search">
+                  <span class="cnki-field">主题⌄</span>
+                  <p><small>中文文献、外文文献</small><b>输入篇名、关键词或研究方向</b></p>
+                  <i>检索</i>
+                </div>
+                <nav class="cnki-types" aria-label="文献类型">
+                  <span class="active">✓ 学术期刊</span><span class="active">✓ 学位论文</span><span class="active">✓ 会议</span><span>□ 报纸</span><span>□ 年鉴</span><span>□ 专利</span>
+                </nav>
+                <div class="cnki-result-bar"><span>精选文献</span><small>按相关度排序 · 共找到优质结果</small></div>
+                <div class="cnki-results">
+                  <article>
+                    <span>Core Journal</span>
+                    <p><b>Digital Transformation and Innovative Learning in Higher Education</b><small>Zhiyuan Lin · Modern Educational Research · 2025</small><em>Keywords: digital learning · higher education · learning models</em></p>
+                    <i>Cited by 36</i>
+                  </article>
+                  <article>
+                    <span>Master's Thesis</span>
+                    <p><b>Mechanisms of College Students' Learning Behavior in New Media Environments</b><small>Yuan Zhou · East China Normal University · 2024</small><em>Keywords: new media · learning behavior · influence mechanisms</em></p>
+                    <i>Downloads 128</i>
+                  </article>
+                  <article>
+                    <span>Academic Journal</span>
+                    <p><b>Artificial Intelligence-Enabled Educational Practice: Pathways and Reflections</b><small>Jiayan Chen · Research in Educational Development · 2025</small><em>Keywords: artificial intelligence · educational practice · application pathways</em></p>
+                    <i>Cited by 21</i>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="hero-actions" data-reveal data-reveal-delay="480">
+              <button class="hero-action-primary" type="button" data-open-qr>
+                <span><b>立即咨询</b><small>价格到位 · 越早安排越省心</small></span><i>➜</i>
+              </button>
+              <button class="hero-action-secondary" type="button" data-page-target="profile" data-page-anchor="#advantagesHeading">
+                <span><b>为什么选择我们</b><small>我们有哪些优势</small></span><i>➜</i>
+              </button>
+            </div>
+            <div class="scroll-cue" aria-hidden="true"><span></span><small>向下滑动探索</small></div>
+            <div class="hero-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+          </section>
+
+          <section class="service-marquee hero-marquee" aria-label="更多服务项目">
+            <div class="marquee-track">
+              <div class="marquee-group">
+                <span><i>⌖</i>选题指导</span><span><i>✎</i>初稿撰写</span><span><i>▤</i>实习报告</span><span><i>◎</i>职业规划</span><span><i>◫</i>教案</span><span><i>▰</i>PPT 汇报</span><span><i>⌘</i>计算机毕设</span><span><i>◇</i>毕业论文</span><span><i>☷</i>开题报告</span>
+              </div>
+              <div class="marquee-group" aria-hidden="true">
+                <span><i>⌖</i>选题指导</span><span><i>✎</i>初稿撰写</span><span><i>▤</i>实习报告</span><span><i>◎</i>职业规划</span><span><i>◫</i>教案</span><span><i>▰</i>PPT 汇报</span><span><i>⌘</i>计算机毕设</span><span><i>◇</i>毕业论文</span><span><i>☷</i>开题报告</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="section home-stage service-stage" data-reveal>
+            <header class="section-head split" data-reveal>
+              <div><p class="eyebrow">CORE SERVICES</p><h2>论文撰写服务</h2><p>围绕真实写作难点，提供清晰、可执行的辅导方案。</p></div>
+              <button type="button" data-page-target="guide">查看指南 ➜</button>
+            </header>
+            <div class="service-grid service-grid-six">
+              <button class="service-card accent-purple" type="button" data-open="topic" data-reveal data-reveal-delay="40"><span class="line-icon">⌖</span><b>选题方向辅导</b><small>明确方向、对象与范围</small><i>01</i></button>
+              <button class="service-card accent-blue" type="button" data-open="outline" data-reveal data-reveal-delay="100"><span class="line-icon">☷</span><b>论文框架梳理</b><small>理清章节和论证路线</small><i>02</i></button>
+              <button class="service-card accent-green" type="button" data-open="literature" data-reveal data-reveal-delay="160"><span class="line-icon">⌕</span><b>文献检索指导</b><small>关键词、筛选与综述</small><i>03</i></button>
+              <button class="service-card accent-pink" type="button" data-open="revision" data-reveal data-reveal-delay="220"><span class="line-icon">✦</span><b>修改润色建议</b><small>优化逻辑、衔接和表达</small><i>04</i></button>
+              <button class="service-card accent-orange" type="button" data-open="format" data-reveal data-reveal-delay="280"><span class="line-icon">✓</span><b>格式规范检查</b><small>引用、图表与排版核对</small><i>05</i></button>
+              <button class="service-card accent-violet" type="button" data-open="defense" data-reveal data-reveal-delay="340"><span class="line-icon">▷</span><b>答辩准备</b><small>陈述结构与高频问答</small><i>06</i></button>
+            </div>
+          </section>
+
+          <section class="section home-stage workflow-stage" data-reveal>
+            <header class="section-head" data-reveal><div><p class="eyebrow">THESIS JOURNEY</p><h2>论文写作全流程</h2><p>从确定方向到通过答辩，每一步都有人陪你梳理。</p></div></header>
+            <div class="workflow-line glass-panel">
+              <article data-reveal="left"><span>01</span><div><b>选题定题</b><small>明确研究方向与可行性</small></div></article>
+              <article data-reveal="left" data-reveal-delay="60"><span>02</span><div><b>撰写开题报告／任务书</b><small>完成研究背景、思路和计划</small></div></article>
+              <article data-reveal="left" data-reveal-delay="120"><span>03</span><div><b>撰写初稿</b><small>按照框架逐章推进内容</small></div></article>
+              <article data-reveal="left" data-reveal-delay="180"><span>04</span><div><b>初稿修改</b><small>通常经过 3—5 次反馈调整</small></div></article>
+              <article data-reveal="left" data-reveal-delay="240"><span>05</span><div><b>修改后定稿</b><small>统一逻辑、表达与格式</small></div></article>
+              <article data-reveal="left" data-reveal-delay="300"><span>06</span><div><b>上传系统检测</b><small>结合检测结果针对性优化</small></div></article>
+              <article data-reveal="left" data-reveal-delay="360"><span>07</span><div><b>通过后答辩</b><small>准备陈述、PPT 与问答</small></div></article>
+            </div>
+          </section>
+
+          <section class="more-services-stage home-stage" data-reveal>
+            <header class="section-head" data-reveal>
+              <div><p class="eyebrow">MORE FOR STUDENTS</p><h2>我们还能做什么？</h2><p>专为大学生服务</p></div>
+            </header>
+            <div class="more-services-grid">
+              <article data-reveal data-reveal-delay="30"><i>W</i><b>Word 格式修改</b><small>格式、样式与目录统一</small></article>
+              <article data-reveal data-reveal-delay="60"><i>AI</i><b>AIGC 降重</b><small>结合报告针对性优化</small></article>
+              <article data-reveal data-reveal-delay="90"><i>⌘</i><b>毕业设计</b><small>思路梳理与过程指导</small></article>
+              <article data-reveal data-reveal-delay="120"><i>Ps</i><b>PS 修图</b><small>图片处理与视觉优化</small></article>
+              <article data-reveal data-reveal-delay="150"><i>P</i><b>PPT 报告</b><small>结构、排版与汇报呈现</small></article>
+              <article data-reveal data-reveal-delay="180"><i>✓</i><b>结课大作业</b><small>要求拆解与内容梳理</small></article>
+              <article data-reveal data-reveal-delay="210"><i>¶</i><b>论文排版</b><small>按学校规范精细调整</small></article>
+              <article data-reveal data-reveal-delay="240"><i>⌕</i><b>文献代检索</b><small>关键词与优质来源筛选</small></article>
+              <article data-reveal data-reveal-delay="270"><i>▥</i><b>学术图表制作优化</b><small>数据图表与展示优化</small></article>
+            </div>
+          </section>
+
+          <section class="section home-stage aigc-stage" data-reveal>
+            <header class="section-head" data-reveal>
+              <div><p class="eyebrow">AIGC & SIMILARITY</p><h2>提供降重<br />降低 AIGC 服务</h2><p class="reassure">无需担忧，支持市场主流检测软件报告针对性优化。</p></div>
+            </header>
+            <div class="report-support glass-panel" data-reveal="zoom">
+              <div class="report-metric"><span>AIGC</span><i></i><b>针对性优化</b></div>
+              <div class="report-metric"><span>重复率</span><i></i><b>逐段梳理</b></div>
+              <p>结合检测报告定位高风险内容，提供修改思路与表达优化建议。</p>
+            </div>
+            <div class="logo-cloud" aria-label="支持的主流检测平台">
+              <a href="https://www.cnki.net/" data-official-link data-reveal data-reveal-delay="30" aria-label="打开中国知网官方网站"><img src="./assets/logo-cnki.png" alt="中国知网 CNKI" /><span>访问官网 ➜</span></a>
+              <a class="light" href="https://www.cqvip.com/" data-official-link data-reveal data-reveal-delay="80" aria-label="打开维普官方网站"><img src="./assets/logo-vip.png" alt="维普资讯 VIP" /><span>访问官网 ➜</span></a>
+              <a href="https://www.gezida.com/" data-official-link data-reveal data-reveal-delay="130" aria-label="打开格子达官方网站"><img src="./assets/logo-gezida.png" alt="格子达" /><span>访问官网 ➜</span></a>
+              <a class="light" href="https://www.wanfangdata.com.cn/" data-official-link data-reveal data-reveal-delay="180" aria-label="打开万方数据官方网站"><img src="./assets/logo-wanfang.png" alt="万方数据" /><span>访问官网 ➜</span></a>
+              <a class="light" href="https://www.bigan.net/" data-official-link data-reveal data-reveal-delay="230" aria-label="打开笔杆网官方网站"><img src="./assets/logo-bigan.png" alt="笔杆网" /><span>访问官网 ➜</span></a>
+              <a class="light" href="https://matrix.tencent.com/ai-detect/" data-official-link data-reveal data-reveal-delay="280" aria-label="打开腾讯朱雀 AI 检测助手官方网站"><img src="./assets/logo-zhuque.webp" alt="朱雀 AI 检测助手" /><small>朱雀 AI 检测</small><span>访问官网 ➜</span></a>
+            </div>
+            <button class="aigc-consult" type="button" data-open-qr data-reveal><span><small>发送报告，说明你的检测情况</small><b>咨询针对性优化方案</b></span><i>➜</i></button>
+          </section>
+
+        </section>
+
+        <section class="page" id="page-guide" data-page="guide" aria-labelledby="guideTitle">
+          <header class="page-hero intake-hero">
+            <p class="eyebrow">REQUIREMENT BRIEF</p><h1 id="guideTitle">需要提供什么信息？<br />什么价格呢？</h1>
+            <p>小白表示不太懂？没关系，把知道的信息先填上，需求越清楚，报价越准确。</p>
+          </header>
+
+          <section class="intake-intro" data-reveal>
+            <div class="intake-greeting"><span>Hi</span><div><b>你好，同学！</b><p>不要只问“论文多少钱”。学校要求、论文类型、阶段、字数与截止时间不同，工作量会差很多。</p></div></div>
+            <ul><li>知道多少填多少，不确定的项目可以先留空</li><li>学校模板、任务书和导师意见会直接影响格式与修改范围</li><li>请勿填写身份证号、账号密码等敏感信息</li></ul>
+          </section>
+
+          <section class="intake-progress-card" aria-live="polite">
+            <div class="intake-progress-head"><span><small>需求完成度</small><b id="intakePercent">0%</b></span><em id="intakeStatus">先填写基本信息</em></div>
+            <div class="intake-progress-track"><i id="intakeProgressBar"></i></div>
+            <p>填写越完整，我们越容易快速判断需求并减少反复沟通。</p>
+          </section>
+
+          <form class="intake-form" id="intakeForm">
+            <section class="intake-block">
+              <header><span>01</span><div><b>基本信息 <em class="intake-title-note">（我们需要确立专业、层次与当前写作阶段）</em></b></div></header>
+              <div class="intake-fields">
+                <label class="wide"><span>学校全名</span><input name="school" data-intake-required placeholder="例如：××大学" /></label>
+                <label class="degree-field"><span>学历层次</span><select name="degree" data-intake-required><option value="">请选择</option><option>专科</option><option>本科</option><option>自考本科（申请学位）</option><option>自考本科（不申请学位）</option><option>硕士</option><option>其他</option></select><small>自考本科是否申请学位一定要分清楚哦</small></label>
+                <label class="major-field"><span>专业</span><div class="major-combobox"><input id="majorInput" name="major" data-intake-required placeholder="输入文字搜索全部专业" autocomplete="off" role="combobox" aria-autocomplete="list" aria-controls="majorOptions" aria-expanded="false" /><button id="majorToggle" type="button" aria-label="展开专业选项">⌄</button><div class="major-options" id="majorOptions" role="listbox" hidden></div></div><small>支持模糊搜索，也可以直接填写目录外专业</small></label>
+                <label><span>任务类型</span><select name="type" data-intake-required><option value="">请选择</option><option>课程论文</option><option>毕业论文</option><option>毕业设计</option><option>开题报告</option><option>其他</option></select></label>
+                <label><span>目前阶段</span><select name="stage" data-intake-required><option value="">请选择</option><option>还没有选题</option><option>已有题目</option><option>准备开题</option><option>已有初稿</option><option>导师要求修改</option><option>准备定稿/答辩</option></select></label>
+              </div>
+            </section>
+
+            <section class="intake-block">
+              <header><span>02</span><div><b>论文要求</b><small>这些信息最影响工作量与时间安排</small></div></header>
+              <div class="intake-fields">
+                <label class="wide"><span>论文题目或研究方向</span><input name="title" data-intake-required placeholder="没有最终题目也可以填写大致方向" /></label>
+                <label><span>总字数</span><input name="words" data-intake-required inputmode="numeric" placeholder="例如：8000" /></label>
+                <label><span>交稿时间</span><input name="deadline" data-intake-required type="date" /></label>
+                <label><span>交付格式</span><select name="format" data-intake-required><option value="">请选择</option><option>Word</option><option>PDF</option><option>Word + PDF</option><option>按学校系统要求</option></select></label>
+                <label><span>查重要求</span><input name="similarity" placeholder="例如：知网低于 20%（没有则不填）" /></label>
+                <label><span>AIGC 要求</span><input name="aigc" placeholder="例如：低于 20%（没有则不填）" /></label>
+                <label><span>图表与数据</span><select name="data"><option value="">没有则不填</option><option>需要图表，无现成数据</option><option>已有数据，需要分析</option><option>毕业设计，需要图纸/代码</option></select></label>
+              </div>
+            </section>
+
+            <section class="intake-block">
+              <header><span>03</span><div><b>需要哪些配套材料？ <em class="intake-title-note intake-optional-note">（可不填，我们会按学校发的文件安排）</em></b><small>支持多选</small></div></header>
+              <div class="intake-checks" data-intake-group="deliverables">
+                <label><input type="checkbox" name="deliverables" value="任务书" /><span>任务书</span></label><label><input type="checkbox" name="deliverables" value="开题报告" /><span>开题报告</span></label><label><input type="checkbox" name="deliverables" value="文献综述" /><span>文献综述</span></label><label><input type="checkbox" name="deliverables" value="外文翻译" /><span>外文翻译</span></label><label><input type="checkbox" name="deliverables" value="中期检查" /><span>中期检查</span></label><label><input type="checkbox" name="deliverables" value="答辩PPT" /><span>答辩 PPT</span></label>
+              </div>
+            </section>
+
+            <section class="intake-block materials-block">
+              <header><span>04</span><div><b>学校/老师发了哪些资料？ <em class="intake-title-note">（没有则不填，资料越齐全越能避免返工）</em></b></div></header>
+              <div class="intake-checks" data-intake-group="materials">
+                <label><input type="checkbox" name="materials" value="学校论文模板" /><span>学校论文模板</span></label><label><input type="checkbox" name="materials" value="任务书/选题要求" /><span>任务书/选题要求</span></label><label><input type="checkbox" name="materials" value="导师批注意见" /><span>导师批注意见</span></label><label><input type="checkbox" name="materials" value="已有初稿或提纲" /><span>已有初稿或提纲</span></label>
+              </div>
+              <label class="intake-note"><span>特殊要求或备注</span><textarea name="notes" rows="4" placeholder="例如：学校格式、导师要求、已有数据等（没有则不填）"></textarea></label>
+              <p class="material-warning"><b>重要提醒</b>：老师提供的模板、任务书、批注意见等请完整说明。遗漏关键要求可能造成返工；最终以学校和导师要求为准。</p>
+            </section>
+
+            <button class="intake-generate" type="submit"><span><small>自动整理为可发送文字</small><b>生成需求清单</b></span><i>➜</i></button>
+          </form>
+
+          <section class="intake-summary" id="intakeSummary" hidden>
+            <header><div><p class="eyebrow">READY TO SEND</p><h2>需求清单已整理</h2></div><button type="button" id="copyIntake">复制</button></header>
+            <pre id="intakeSummaryText"></pre>
+            <button type="button" class="intake-contact" data-open-qr>复制后添加小助理咨询 <i>➜</i></button>
+          </section>
+        </section>
+
+        <section class="page case-page" id="page-consult" data-page="consult" aria-labelledby="consultTitle">
+          <header class="case-hero">
+            <p class="eyebrow">REAL CASE / 真实案例</p>
+            <h1 id="consultTitle">没接触过市场价？<br /><span>为什么听说有的很贵，<br />有的很便宜？</span></h1>
+          </header>
+
+          <article class="case-story">
+            <header class="case-story-head">
+              <span>01</span>
+              <div><p class="eyebrow">PRICE BEHIND THE STORY</p><h2>听到价格，也要了解价格背后的故事</h2></div>
+            </header>
+            <div class="case-copy">
+              <p>关于毕业论文，有些同学喜欢四处打听：“这边比你便宜 200 元，那边比你便宜 300 元，你这么贵，算了还是找别人吧。”</p>
+              <p>你打听到了价格，却未必了解价格背后的故事。市场没有统一价格，论文写作、修改和降重周期都比较长，需要投入真实的时间和精力。接受低价，也要接受低价所对应的服务范围和质量。</p>
+              <p>如果只图便宜，后期可能联系不到人，或者对方没有时间继续修改和降重。可以问问上一届学长学姐，看看他们经历了什么。合作需要信任，真正需要的是靠谱，而不是只用一个数字衡量一切。</p>
+              <blockquote>少占论文的便宜，也少踩低价的坑。</blockquote>
+            </div>
+          </article>
+
+          <section class="case-evidence" aria-labelledby="caseEvidenceTitle">
+            <header>
+              <div><p class="eyebrow">REAL STORY</p><h2 id="caseEvidenceTitle">具体案例</h2></div>
+              <p>点击图片可放大查看完整内容</p>
+            </header>
+            <div class="case-gallery">
+              <button class="case-shot" type="button" data-case-image="./assets/price-case-2.jpg" aria-label="放大查看案例原文第一张">
+                <img src="./assets/price-case-2.jpg" alt="市场价格真实案例原文上半部分" />
+                <span><b>案例原文 · 上半部分</b><small>点击放大查看</small></span>
+              </button>
+              <button class="case-shot" type="button" data-case-image="./assets/price-case-1.jpg" aria-label="放大查看案例原文第二张">
+                <img src="./assets/price-case-1.jpg" alt="市场价格真实案例原文下半部分" />
+                <span><b>案例原文 · 下半部分</b><small>点击放大查看</small></span>
+              </button>
+            </div>
+          </section>
+
+          <button class="case-contact" type="button" data-open-qr>
+            <span><small>对报价或服务范围还有疑问？</small><b>咨询小助理，先把需求说清楚</b></span><i>➜</i>
+          </button>
+
+          <blockquote class="case-closing-quote">
+            <span>“</span>
+            <p>这个世界没有神话，只有一些很朴素的道理：<br />质量好的打败质量差的，认真的打败轻率的，耐心的打败浮躁的，勤奋的打败懒惰的，有信誉的打败没信誉的。</p>
+            <span>”</span>
+          </blockquote>
+        </section>
+
+        <section class="page" id="page-profile" data-page="profile" aria-labelledby="profileTitle">
+          <section class="section about-section advantages-section">
+            <blockquote class="advantages-quote advantages-quote-top"><span>成交不是结束</span><strong>认真交付与持续负责，才是服务真正的开始。</strong></blockquote>
+            <header class="section-head advantages-heading" id="advantagesHeading"><div><p class="eyebrow">WHY CHOOSE US</p><h2>我们有哪些优势？</h2><p>真实团队、透明沟通，让每一个环节都有回应。</p></div></header>
+            <div class="advantages-grid">
+              <article><span>01</span><i>群</i><h3>一对一专属沟通群</h3><p>每位客户单独建群，需求、资料、进度和修改反馈统一同步，沟通更清楚。</p></article>
+              <article><span>02</span><i>进</i><h3>全过程进度透明</h3><p>从需求确认到阶段交付持续更新，当前进度、待确认内容和下一步安排一目了然。</p></article>
+              <article><span>03</span><i>快</i><h3>专职团队快速响应</h3><p>由专职服务团队持续跟进，常规消息及时回复，遇到问题不让你反复等待。</p></article>
+              <article><span>04</span><i>企</i><h3>正规企业工商注册</h3><p>工作室拥有正规企业工商注册信息，服务主体明确，合作过程更安心。</p></article>
+              <article><span>05</span><i>店</i><h3>真实线下工作室</h3><p>并非只有线上账号，我们拥有真实线下办公场所，团队稳定、服务更有保障。</p></article>
+              <article><span>06</span><i>赠</i><h3>赠送答辩准备材料</h3><p>每位成交客户均可免费获赠答辩 PPT 或答辩稿，帮助你更从容地准备答辩。</p></article>
+            </div>
+          </section>
+          <header class="profile-hero glass-panel">
+            <img src="./assets/book-avatar.jpg" alt="BOOK工作室" />
+            <div><p class="eyebrow">YOUR THESIS SPACE</p><h1 id="profileTitle">我的论文空间</h1><p>收藏有用内容，规划你的论文进度。</p></div>
+          </header>
+          <div class="profile-stats glass-panel"><div><b id="favoriteCount">0</b><span>已收藏</span></div><div><b>6</b><span>辅导阶段</span></div><div><b>7×24</b><span>内容可查</span></div></div>
+          <section class="section">
+            <header class="section-head"><div><p class="eyebrow">MY TOOLS</p><h2>我的工具</h2></div></header>
+            <div class="menu-list glass-panel">
+              <button type="button" data-open="favorites"><span class="menu-icon">♡</span><span><b>我的收藏</b><small>查看保存的指南和提醒</small></span><i>➜</i></button>
+              <button type="button" data-open="schedule"><span class="menu-icon">◷</span><span><b>论文计划</b><small>规划选题、初稿和答辩节点</small></span><i>➜</i></button>
+              <button type="button" data-open-qr><span class="menu-icon">⌁</span><span><b>联系小助理</b><small>微信扫码，进一步沟通</small></span><i>➜</i></button>
+              <button type="button" data-open="feedback"><span class="menu-icon">✦</span><span><b>意见反馈</b><small>告诉我们哪里需要改进</small></span><i>➜</i></button>
+            </div>
+          </section>
+          <footer><p>辅导服务以方法指导、思路梳理和反馈建议为主，不代写、不伪造数据。</p><span>© 2026 BOOK工作室</span></footer>
+        </section>
+      </main>
+    </div>
+
+    <nav class="bottom-nav" aria-label="底部导航">
+      <button class="active" type="button" data-page-target="home"><svg viewBox="0 0 24 24"><path d="m3 11 9-8 9 8v10h-6v-6H9v6H3V11Z" /></svg><span>首页</span></button>
+      <button type="button" data-page-target="guide"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8m-8 4h8m-8 4h5" /></svg><span>论文报价</span></button>
+      <button type="button" data-page-target="consult"><svg viewBox="0 0 24 24"><path d="M4 5h16v12H9l-5 4V5Zm4 4h8m-8 4h5" /></svg><span>市场价</span></button>
+      <button type="button" data-page-target="profile"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0" /></svg><span>我的</span></button>
+    </nav>
+
+    <div class="sheet" id="contentSheet" hidden>
+      <div class="modal-backdrop" data-close-sheet></div>
+      <section class="sheet-card glass-panel" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+        <div class="sheet-handle"></div><button class="modal-close" type="button" data-close-sheet aria-label="关闭">×</button>
+        <span class="sheet-icon" id="sheetIcon">✦</span><p class="eyebrow" id="sheetKicker">THESIS GUIDE</p><h2 id="sheetTitle">论文辅导</h2><div id="sheetContent"></div>
+        <button class="favorite-button" id="favoriteButton" type="button">♡ 收藏这条内容</button>
+        <button class="sheet-primary" type="button" data-close-sheet>我知道了</button>
+      </section>
+    </div>
+
+    <div class="qr-modal" id="qrModal" hidden>
+      <div class="modal-backdrop" data-close-qr></div>
+      <section class="qr-card glass-panel" role="dialog" aria-modal="true" aria-labelledby="qrTitle">
+        <button class="modal-close" type="button" data-close-qr aria-label="关闭">×</button>
+        <div class="qr-avatar"><img src="./assets/book-avatar.jpg" alt="小助理头像" /><i></i></div>
+        <p class="eyebrow">WECHAT ASSISTANT</p><h2 id="qrTitle">添加论文辅导小助理</h2>
+        <p>长按识别或保存二维码后，在微信中扫一扫。</p>
+        <div class="qr-frame"><img src="./assets/wechat-qr.png" alt="论文辅导小助理微信二维码" /></div>
+        <div class="qr-tip"><span>1</span>长按二维码识别 <i></i><span>2</span>添加好友并说明论文阶段</div>
+        <button class="sheet-primary" type="button" data-close-qr>稍后再说</button>
+      </section>
+    </div>
+
+    <div class="case-lightbox" id="caseLightbox" hidden>
+      <div class="modal-backdrop" data-close-case></div>
+      <section class="case-lightbox-card" role="dialog" aria-modal="true" aria-label="查看案例原图">
+        <button class="modal-close" type="button" data-close-case aria-label="关闭图片">×</button>
+        <img id="caseLightboxImage" alt="案例原图放大查看" />
+        <p>上下滑动查看完整图片</p>
+      </section>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="./assets/majors.js"></script>
+    <script src="./app.js?v=8"></script>
+  </body>
+</html>
